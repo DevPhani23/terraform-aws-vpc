@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 resource "aws_vpc" "main" {
   cidr_block       = var.vpc_cidr
   instance_tenancy = "default"
@@ -195,15 +196,25 @@ terraform {
     }
   }
   backend "s3" {
+=======
+# terraform {
+#   required_providers {
+#     aws = {
+#       source = "hashicorp/aws"
+#       version = "5.48.0"
+#     }
+#   }
+#   backend "s3" {
+>>>>>>> aa88975 (Terraform aws vpc infrastructure creation)
     
-  }
-}
+#   }
+# }
 
-#provide authentication here
+# #provide authentication here
 
-provider "aws" {
-  region = "us-east-1"
-} 
+# provider "aws" {
+#   region = "us-east-1"
+# }  
 
 module "vpc" {
     source = "../terraform-aws-vpc"
@@ -212,7 +223,7 @@ module "vpc" {
 }
 
 
-variable "project_name" {
+/* variable "project_name" {
     default = "expense"
     
 }
@@ -225,4 +236,8 @@ variable "common_tags" {
     }
   
 }
+<<<<<<< HEAD
 >>>>>>> 8a1404f (terraform vpc test)
+=======
+ */
+>>>>>>> aa88975 (Terraform aws vpc infrastructure creation)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### Project ####
 variable "project_name"{
     type = string
@@ -125,6 +126,9 @@ variable "vpc_peering_tags" {
 }
 =======
 /* variable "project_name" {
+=======
+variable "project_name" {
+>>>>>>> aa88975 (Terraform aws vpc infrastructure creation)
     default = "expense"
     
 }
@@ -136,5 +140,9 @@ variable "common_tags" {
         Terraform = "true"
     }
   
+<<<<<<< HEAD
 } */
 >>>>>>> 8a1404f (terraform vpc test)
+=======
+}
+>>>>>>> aa88975 (Terraform aws vpc infrastructure creation)
