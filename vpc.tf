@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 resource "aws_vpc" "main" {
   cidr_block       = var.vpc_cidr
   instance_tenancy = "default"
@@ -185,3 +186,43 @@ resource "aws_route_table_association" "database" {
   subnet_id      = element(aws_subnet.database[*].id, count.index)
   route_table_id = aws_route_table.database.id
 }
+=======
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.48.0"
+    }
+  }
+  backend "s3" {
+    
+  }
+}
+
+#provide authentication here
+
+provider "aws" {
+  region = "us-east-1"
+} 
+
+module "vpc" {
+    source = "../terraform-aws-vpc"
+    project_name = var.project_name
+    common_tags = var.common_tags
+}
+
+
+variable "project_name" {
+    default = "expense"
+    
+}
+
+variable "common_tags" {
+    default = {
+        Project = "expense"
+        Environment = "dev"
+        Terraform = "true"
+    }
+  
+}
+>>>>>>> 8a1404f (terraform vpc test)

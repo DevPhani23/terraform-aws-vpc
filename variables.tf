@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #### Project ####
 variable "project_name"{
     type = string
@@ -122,3 +123,18 @@ variable "vpc_peering_tags" {
   type = map
   default = {}
 }
+=======
+/* variable "project_name" {
+    default = "expense"
+    
+}
+
+variable "common_tags" {
+    default = {
+        Project = "expense"
+        Environment = "dev"
+        Terraform = "true"
+    }
+  
+} */
+>>>>>>> 8a1404f (terraform vpc test)
