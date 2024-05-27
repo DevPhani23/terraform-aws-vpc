@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 resource "aws_vpc" "main" {
   cidr_block       = var.vpc_cidr
   instance_tenancy = "default"
@@ -216,10 +217,13 @@ terraform {
 #   region = "us-east-1"
 # }  
 
+=======
+>>>>>>> aaafac8 ( terraform aws vpc - module user)
 module "vpc" {
     source = "../terraform-aws-vpc"
     project_name = var.project_name
     common_tags = var.common_tags
+<<<<<<< HEAD
 }
 
 
@@ -241,3 +245,7 @@ variable "common_tags" {
 =======
  */
 >>>>>>> aa88975 (Terraform aws vpc infrastructure creation)
+=======
+    public_subnet_cidr = var.public_subnet_cidr
+}
+>>>>>>> aaafac8 ( terraform aws vpc - module user)

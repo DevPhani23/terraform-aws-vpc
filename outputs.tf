@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # output "azs" {
 #     value = data.aws_availability_zones.available.names
 # }
@@ -29,3 +30,8 @@ output "database_subnet_group_name" {
 output "igw_id" {
   value = aws_internet_gateway.gw.id
 }
+=======
+/* output "azs_info" {
+    value = module.vpc.azs #module.<module-name>.<output>
+} */
+>>>>>>> aaafac8 ( terraform aws vpc - module user)

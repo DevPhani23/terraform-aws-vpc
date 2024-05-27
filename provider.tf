@@ -8,7 +8,6 @@ terraform {
   backend "s3" {
     bucket = "devphani-remote-state"
     key = "expense-vpc"
-    
     region = "us-east-1"
     dynamodb_table = "devphani-locking"
   }

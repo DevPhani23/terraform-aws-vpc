@@ -130,7 +130,6 @@ variable "vpc_peering_tags" {
 variable "project_name" {
 >>>>>>> aa88975 (Terraform aws vpc infrastructure creation)
     default = "expense"
-    
 }
 
 variable "common_tags" {
@@ -139,6 +138,10 @@ variable "common_tags" {
         Environment = "dev"
         Terraform = "true"
     }
+}
+
+variable "public_subnet_cidr" {
+    default = ["10.0.1.0/24","10.0.2.0/24"]
   
 <<<<<<< HEAD
 } */
